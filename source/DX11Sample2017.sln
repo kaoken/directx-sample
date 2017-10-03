@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Simple", "Simple\Simple.vcxproj", "{9DF0A8F2-544D-499E-AB72-D17B9FD2E37B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-Simple", "Simple\Simple.vcxproj", "{9DF0A8F2-544D-499E-AB72-D17B9FD2E37B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ライブラリ", "ライブラリ", "{CA620534-2FA4-47B1-817B-63030A2EE4A3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MCLib", "MCLib\MCLib.vcxproj", "{45E6122E-5921-4F27-A9F4-55D3C108E625}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,20 @@ Global
 		{9DF0A8F2-544D-499E-AB72-D17B9FD2E37B}.Release|x64.Build.0 = Release|x64
 		{9DF0A8F2-544D-499E-AB72-D17B9FD2E37B}.Release|x86.ActiveCfg = Release|Win32
 		{9DF0A8F2-544D-499E-AB72-D17B9FD2E37B}.Release|x86.Build.0 = Release|Win32
+		{45E6122E-5921-4F27-A9F4-55D3C108E625}.Debug|x64.ActiveCfg = Debug|x64
+		{45E6122E-5921-4F27-A9F4-55D3C108E625}.Debug|x64.Build.0 = Debug|x64
+		{45E6122E-5921-4F27-A9F4-55D3C108E625}.Debug|x86.ActiveCfg = Debug|Win32
+		{45E6122E-5921-4F27-A9F4-55D3C108E625}.Debug|x86.Build.0 = Debug|Win32
+		{45E6122E-5921-4F27-A9F4-55D3C108E625}.Release|x64.ActiveCfg = Release|x64
+		{45E6122E-5921-4F27-A9F4-55D3C108E625}.Release|x64.Build.0 = Release|x64
+		{45E6122E-5921-4F27-A9F4-55D3C108E625}.Release|x86.ActiveCfg = Release|Win32
+		{45E6122E-5921-4F27-A9F4-55D3C108E625}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{45E6122E-5921-4F27-A9F4-55D3C108E625} = {CA620534-2FA4-47B1-817B-63030A2EE4A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {189E2524-9EB0-47EB-A372-C32FCC26B88A}
