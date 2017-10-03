@@ -1,6 +1,4 @@
 #include "Header.h"
-#include <windows.h>
-#include <commctrl.h>
 #if defined(_DEBUG)
 #  include <crtdbg.h>
 #  define _CRTDBG_MAP_ALLOC
@@ -22,19 +20,7 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR strCmdLine, INT)
 	//_crtBreakAlloc = 35906;
 #endif
 
-	//DXUTSetCallbackMsgProc(MsgProc);
-	//DXUTSetCallbackKeyboard(OnKeyboard);
-	//DXUTSetCallbackFrameMove(OnFrameMove);
-	//DXUTSetCallbackDeviceChanging(ModifyDeviceSettings);
-
-	//DXUTSetCallbackD3D11DeviceAcceptable(IsD3D11DeviceAcceptable);
-	//DXUTSetCallbackD3D11DeviceCreated(OnD3D11CreateDevice);
-	//DXUTSetCallbackD3D11SwapChainResized(OnD3D11ResizedSwapChain);
-	//DXUTSetCallbackD3D11SwapChainReleasing(OnD3D11ReleasingSwapChain);
-	//DXUTSetCallbackD3D11DeviceDestroyed(OnD3D11DestroyDevice);
-	//DXUTSetCallbackD3D11FrameRender(OnD3D11FrameRender);
-
-	DXUTInit(true, true, nullptr); // Parse the command line, show msgboxes on error, no extra command line params
+	DXUTInit(true, true, nullptr);
 	DXUTSetCursorSettings(true, true);
 	DXUTCreateWindow(L"Simple");
 
@@ -43,6 +29,5 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE, LPSTR strCmdLine, INT)
 	DXUTMainLoop();
 
 	return DXUTGetExitCode();
-	//return 0;
 }
 
